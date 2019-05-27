@@ -1,0 +1,185 @@
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 3px 3px #000;
+}
+
+.titulo-principal {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: relative;
+    text-align: center;
+    background-color: rgb(18, 71, 123);
+    color: #FFF;
+    padding: 2rem;
+    width: 100%;
+    height: 20em;
+}
+
+.palavras-home {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+     font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-size: 8em;
+    color: #87CEFA;
+    position: absolute;
+    -webkit-animation: aparece 2s;
+            animation: aparece 2s;
+
+}
+
+.artificial-intelligence {
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+}
+.machine-learning {
+    top: 17%;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
+    opacity: .3;
+}
+.agile {
+    top: 45%;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+    opacity: .6;
+}
+.design {
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
+    opacity: .6;
+}
+.iot {
+    top: 30%;
+    left: 95%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+    opacity: .6;
+}
+.blockchain {
+    top: 15%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
+}
+.clean {
+    top: 18%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
+    opacity: .8;
+}
+.digital {
+    top: 43%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
+    opacity: .8;
+}
+.collaboration {
+    top: 40%;
+    left: 12%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
+    opacity: .6;
+}
+.big-data {
+    top: 5%;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
+    opacity: .3;
+}
+.design-thinking {
+    top: 40%;
+    left: 80%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+    opacity: .6;
+}
+
+.botao-saiba-mais {
+    font-size: 1.25em;
+    background-color: rgb(18, 71, 123);
+    color: #FFF;
+    padding: .5em;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao-faca-parte {
+    font-size: 1.25em;
+    background-color: white;
+    padding: .5em;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.secao-texto {
+    font-size: 1.25em;
+    text-align: justify;
+    padding: .3em;
+    margin: 2em auto;
+    width: 120ch;
+}
+
+.secao-vertentes{
+    background-color: rgb(18, 71, 123);
+    height: 30em;
+}
+
+.titulo-vertentes{
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+}
+
+.secao-vertentes h2 {
+    color: white;
+}
+.secao-vertentes ul {
+    display: -webkit-flex;
+    display:         flex;
+}
+.secao-vertentes li {
+    -webkit-flex: auto;
+            flex: auto;
+    display: inline-block;
+    padding: top
+    width: 30em;
+    height: 10em;
+}
+.secao-vertentes li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+.secao-vertentes li:nth-child(2) {
+    order: 1;
+}
+.secao-vertentes li:nth-child(3) {
+    order: 3;
+}
+.secao-vertentes img {
+    width: 30em;
+    height: 10em;
+    border: .2em solid #000;
+}
+
