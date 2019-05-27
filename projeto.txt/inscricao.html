@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>João da Silva - Contato</title>
+	<link rel="icon" href="img/favicon.jpg">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/site.css">
+	<link rel="stylesheet" href="css/contato.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+</head>
+<body>
+	<main>
+		<h1 class="titulo-principal">Contato</h1>
+		<div class="container">
+			<form>
+				<fieldset>
+					<legend>Faça parte desse tipe se inscrevendo na próxima edição do programa de bolsas</legend>
+					<label for="nome">Nome completo</label>
+					<input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+					<label for="email">E-mail</label>
+					<input id="email" type="email" name="email" required placeholder="seu@email.com">
+				</fieldset>
+
+				<fieldset>
+					<legend>Maior disponibilidade</legend>
+					<label>
+						<input type="radio" name="horario" value="manha">
+						manha
+					</label>
+					<label>
+						<input type="radio" name="horario" value="tarde">
+						tarde
+					</label>
+					<label>
+						<input type="radio" name="horario" value="noite">
+						noite
+					</label>
+					<label>
+						<input type="radio" name="horario" value="personalizar">
+						personalizar
+						<input type="text" name="personalizar-texto">
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Interesses</legend>
+					<label>
+						<input type="checkbox" name="ia" value="ia">
+						IA
+					</label>
+					<label>
+						<input type="checkbox" name="big-data" value="big-data">
+						Big Data
+					</label>
+					<label>
+						<input type="checkbox" name="machine-learning" value="machine-learning">
+						Machine Learning
+					</label>
+					<label>
+						<input type="checkbox" name="outro" value="outro">
+						Outro
+						<input type="text" name="outro-texto">
+					</label>
+				</fieldset>
+
+				<legend>Porque você quer pasticipar?</legend>
+				<textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+				<button type="submit">Enviar mensagem</button>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<h2>Compasso Tecnologia LTDA.</h2>
+		<nav>
+			<ul>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

@@ -5,6 +5,7 @@ body {
     line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
+    display: block;
 }
 
 h1,
@@ -180,4 +181,16 @@ main {
     height: 1em;
     background-color: black;
     transform: translateY(.5em) rotate(45deg);
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 2em;
+}
+footer h2 {
+    font-size: 3em;
+}
+footer a {
+    color: #F99;
 }
