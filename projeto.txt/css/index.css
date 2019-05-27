@@ -1,7 +1,12 @@
+body {
+    display: block;
+}
+
 h1 {
     text-transform: uppercase;
     font-size: 3em;
     text-shadow: 3px 3px #000;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
 
 .titulo-principal {
@@ -16,6 +21,12 @@ h1 {
     height: 20em;
 }
 
+.compasso-labs {
+    text-align: center;
+    color: #FFF;
+    padding: 2rem;
+}
+
 .palavras-home {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
@@ -24,14 +35,15 @@ h1 {
     right: 0;
     top: 0;
     left: 0;
-     font-family: "Shadows Into Light", cursive;
+}
+.palavra-home {
+    font-family: "Shadows Into Light", cursive;
     font-weight: bold;
-    font-size: 8em;
-    color: #87CEFA;
+    font-size: 400%;
+    color: rgba(255, 127, 127, .5);
     position: absolute;
     -webkit-animation: aparece 2s;
             animation: aparece 2s;
-
 }
 
 .artificial-intelligence {
@@ -74,7 +86,7 @@ h1 {
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
 }
-.clean {
+.clean-code {
     top: 18%;
     left: 35%;
     -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
@@ -183,3 +195,11 @@ h1 {
     border: .2em solid #000;
 }
 
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 2em;
+}
+footer h2 {
+    font-size: 3em;
+}
