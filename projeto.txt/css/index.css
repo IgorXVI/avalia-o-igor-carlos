@@ -22,7 +22,7 @@ span {
 
 .titulo-principal {
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     position: relative;
     text-align: center;
     background-color: rgb(18, 71, 123);
@@ -40,7 +40,7 @@ span {
 
 .palavras-home {
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -54,82 +54,82 @@ span {
     color: rgba(98, 153, 199, .5);
     position: absolute;
     -webkit-animation: aparece 2s;
-            animation: aparece 2s;
+    animation: aparece 2s;
 }
 
 .artificial-intelligence {
     top: 70%;
     left: 70%;
     -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
 }
 .machine-learning {
     top: 17%;
     left: 10%;
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
     opacity: .3;
 }
 .agile {
     top: 45%;
     left: 25%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
     opacity: .6;
 }
 .design {
     top: 30%;
     left: 80%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
     opacity: .6;
 }
 .iot {
     top: 30%;
     left: 95%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
     opacity: .6;
 }
 .blockchain {
     top: 15%;
     left: 60%;
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
 }
 .clean-code {
     top: 18%;
     left: 35%;
     -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
     opacity: .8;
 }
 .digital {
     top: 43%;
     left: 40%;
     -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
     opacity: .8;
 }
 .collaboration {
     top: 40%;
     left: 12%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
     opacity: .6;
 }
 .big-data {
     top: 5%;
     left: 80%;
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
     opacity: .3;
 }
 .design-thinking {
     top: 40%;
     left: 70%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
-            transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+    transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
     opacity: .6;
 }
 
@@ -144,7 +144,11 @@ span {
     text-align: center;
     text-decoration: none;
 }
-
+.botao{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
 .botao-faca-parte {
     font-size: 1.25em;
     background-color: white;
@@ -170,9 +174,19 @@ span {
 }
 
 .titulo-vertentes{
-    font-size: 1.25em;
-    color: white;
-    text-align: center;
+ font-family: "Open Sans Condensed", "Arial", sans-serif;
+ font-size: 100px;
+ color: white;
+ text-align: center;
+ padding-bottom: 30px;
+}
+
+.compasso-tecnologia{
+ font-family: "Open Sans Condensed", "Arial", sans-serif;
+ font-size: 50px;
+ color: white;
+ text-align: absolute;
+ padding-bottom: 30px;
 }
 
 .secao-vertentes h2 {
@@ -184,26 +198,40 @@ span {
 }
 .secao-vertentes li {
     -webkit-flex: auto;
-            flex: auto;
+    flex: auto;
     display: inline-block;
     padding: top
-    width: 30em;
-    height: 10em;
+    width: 10px;
+    height: 30px;
+}
+.secao-vertentes{
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .secao-vertentes li:first-child {
-    order: 2;
-    transform: scale(1.2);
+  width: 30%;
+  height: 35%;
 }
 .secao-vertentes li:nth-child(2) {
-    order: 1;
+  transform: scale(1.2);
+  width: 30%;
+  height: 35%;
 }
+
+
 .secao-vertentes li:nth-child(3) {
-    order: 3;
+ width: 30%;
+  height: 35%;
 }
+
 .secao-vertentes img {
     width: 30em;
     height: 10em;
     border: .2em solid #000;
+}
+
+.links{
+    color: rgba(98, 153, 199, .5);
 }
 
 footer {
