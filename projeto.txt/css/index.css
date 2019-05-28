@@ -7,7 +7,18 @@ h1 {
     font-size: 3em;
     text-shadow: 3px 3px #000;
     font-family: "Open Sans Condensed", "Arial", sans-serif;
+    margin-top: 5%;
 }
+span {
+  font-family: 'Shadows Into Light';
+  text-shadow: 3px 3px #000;
+}
+.compaso {
+  font-family: 'Open Sans Condensed';
+  text-shadow: 3px 3px #000;
+}
+
+
 
 .titulo-principal {
     -webkit-transform-style: preserve-3d;
@@ -39,16 +50,16 @@ h1 {
 .palavra-home {
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
-    font-size: 400%;
-    color: rgba(255, 127, 127, .5);
+    font-size: 500%;
+    color: rgba(98, 153, 199, .5);
     position: absolute;
     -webkit-animation: aparece 2s;
             animation: aparece 2s;
 }
 
 .artificial-intelligence {
-    top: 50%;
-    left: 60%;
+    top: 70%;
+    left: 70%;
     -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
 }
@@ -67,8 +78,8 @@ h1 {
     opacity: .6;
 }
 .design {
-    top: 10%;
-    left: 50%;
+    top: 30%;
+    left: 80%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
     opacity: .6;
@@ -116,7 +127,7 @@ h1 {
 }
 .design-thinking {
     top: 40%;
-    left: 80%;
+    left: 70%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
     opacity: .6;
@@ -202,4 +213,32 @@ footer {
 }
 footer h2 {
     font-size: 3em;
+}
+@-webkit-keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
 }
