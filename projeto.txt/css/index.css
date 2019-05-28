@@ -4,7 +4,7 @@ body {
 
 h1 {
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 4em;
     text-shadow: 3px 3px #000;
     font-family: "Open Sans Condensed", "Arial", sans-serif;
     margin-top: 5%;
@@ -14,7 +14,7 @@ span {
   text-shadow: 3px 3px #000;
 }
 .compaso {
-  font-family: 'Open Sans Condensed';
+  font-family: 'Open Sans';
   text-shadow: 3px 3px #000;
 }
 
@@ -50,7 +50,7 @@ span {
 .palavra-home {
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
-    font-size: 500%;
+    font-size: 600%;
     color: rgba(98, 153, 199, .5);
     position: absolute;
     -webkit-animation: aparece 2s;
@@ -105,7 +105,7 @@ span {
     opacity: .8;
 }
 .digital {
-    top: 43%;
+    top: 23%;
     left: 40%;
     -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
     transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
@@ -186,6 +186,7 @@ span {
 }
 
 .secao-texto {
+    font-family: Open Sans;
     font-size: 1.25em;
     text-align: justify;
     padding: .3em;
@@ -194,14 +195,14 @@ span {
 }
 
 .compasso-tecnologia{
-   font-family: "Open Sans Condensed", "Arial", sans-serif;
+   font-family: "Open Sans", sans-serif;
    font-size: 50px;
    color: white;
    text-align: absolute;
    padding-bottom: 30px;
 }
 .titulo-vertentes{
-   font-family: "Open Sans Condensed", "Arial", sans-serif;
+   font-family: "Open Sans";
    font-size: 100px;
    color: white;
    text-align: center;
