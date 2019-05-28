@@ -144,6 +144,19 @@ span {
     text-align: center;
     text-decoration: none;
 }
+.botao-saiba-mais:hover{
+   font-size: 1.25em;
+   background-color: #FFF;
+   color: black;
+   border: 1px solid #000;
+   padding: .5em;
+   width: 40ch;
+   margin: 2em auto;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+
+}
 .botao{
     padding-top: 70px;
     display: flex;
@@ -152,6 +165,18 @@ span {
 .botao-faca-parte {
     font-size: 1.25em;
     background-color: white;
+    padding: .5em;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.botao-faca-parte:hover {
+    background-color: rgb(18, 71, 123);
+    color: white;
+    border: 1px solid #000;
+    font-size: 1.25em;
     padding: .5em;
     width: 40ch;
     margin: 2em auto;
@@ -174,19 +199,19 @@ span {
 }
 
 .titulo-vertentes{
- font-family: "Open Sans Condensed", "Arial", sans-serif;
- font-size: 100px;
- color: white;
- text-align: center;
- padding-bottom: 30px;
+   font-family: "Open Sans Condensed", "Arial", sans-serif;
+   font-size: 100px;
+   color: white;
+   text-align: center;
+   padding-bottom: 30px;
 }
 
 .compasso-tecnologia{
- font-family: "Open Sans Condensed", "Arial", sans-serif;
- font-size: 50px;
- color: white;
- text-align: absolute;
- padding-bottom: 30px;
+   font-family: "Open Sans Condensed", "Arial", sans-serif;
+   font-size: 50px;
+   color: white;
+   text-align: absolute;
+   padding-bottom: 30px;
 }
 
 .secao-vertentes h2 {
@@ -220,8 +245,8 @@ span {
 
 
 .secao-vertentes li:nth-child(3) {
- width: 30%;
-  height: 35%;
+   width: 30%;
+   height: 35%;
 }
 
 .secao-vertentes img {
