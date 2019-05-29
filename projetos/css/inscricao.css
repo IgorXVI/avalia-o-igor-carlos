@@ -1,0 +1,84 @@
+body {
+    display: block;
+    -webkit-perspective: 6px;
+            perspective: 6px;
+    -webkit-perspective-origin: 50% 160px;
+            perspective-origin: 50% 160px;
+}
+
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+
+}
+html,body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+legend,
+label{
+    font-family: "Open Sans";
+    text-align: justify;
+
+    }
+legend{
+  padding: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .10em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: .8em;
+}
+.formularioGugu {
+  display: none;
+  }
+input:focus,
+textarea:focus {
+    background-color: #FFF;
+    box-shadow: 0 0 3px #0A355F;
+}
+h1{
+  margin-top: -1em;
+}
+.formulario{
+  align-content: center;
+  background-attachment: fixed;
+}
+fieldset{
+  padding: 0 1em 1em 0;
+}
+.cabecalho{
+  height: 20%;
+}
+.borda-vermelha {
+    border: 3px solid red;
+    box-shadow: 0 0 3px red;
+}
+.borda-verde{
+  border: 3px solid green;
+  box-shadow: 0 0 3px green;
+}
+.disable {
+  pointer-events: none;
+  background-color: gray;
+}
+#formulariodps {
+    width: 50%;
+    height:600px;
+    margin-left: 25%;
+    padding-left: 1.5em;
+}
+#formulariodps a{
+    margin-left: 5%;
+}
+#formulariodps a:hover{
+  color:grey;
+}

@@ -1,0 +1,132 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color:#F2FFFC;
+    font-size: 120%;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cabecalho {
+    text-align: center;
+    background-color: #0A355F;
+    color: #FFF;
+    padding: 2rem;
+    width: 100%;
+
+}
+
+h1,
+h2,
+.subtitulo {
+    font-family: "Open Sans Condensed";
+    color: white;
+    text-shadow: 3px 3px #000;
+    font-size: 3em;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+    text-shadow: 3px 3px #000;
+    padding-top: 1em;
+
+
+}
+
+
+
+.cabecalho {
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      position: relative;
+      height: 40%;
+
+}
+
+.vertentes{
+  text-align: center;
+  background-color:#0A355F;
+
+  width: 100%;
+}
+.subtitulo-texto {
+    font-size: 1.5em;
+    clear: both;
+}
+
+main a {
+    color: #0A355F;
+}
+
+main a:hover,
+main a:focus,
+footer a:focus,
+footer a:hover {
+    color: white;
+}
+
+main p {
+    text-align: justify;
+    margin: 1em 0;
+    padding: 5%;
+}
+
+
+.rodape{
+    background-color: #222222;
+    padding: 1em;
+    clear: both;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+
+}
+
+.rodape h2{
+  text-align: left;
+}
+.rodape a {
+  color: #6CA6CD;
+}
+.container {
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+
+main {
+    padding-bottom: 4em;
+    flex-grow: 1;
+}
+.botao {
+    font-size: 1.25em;
+    background-color: #0A355F;
+    color: #FFF;
+    padding: .5em;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+.botao:focus,
+.botao:hover {
+    background-color: white;
+    color:  #0A355F;
+    border: 2px solid #0A355F;
+    /*box-shadow: 0 0 1em #FA9;*/
+}
