@@ -1,13 +1,23 @@
 let nome = $("#nome");
 let email = $("#email");
-let disponibilidade = $(".disponibilidade");
 let mensagem = $("#mensagem");
+let temPersonalizar = false;
+
+$( ()=>{
+  mostraErroNomeNoInput();
+  mostraErroEmailNoInput();
+  mostraPersonalizar();
+  mostraOutros();
+  mostraErroNoInputMenssagem();
+  mostraErroOutros();
+  mostraErroNoPersonalizar();
+  botaoSubmit();
+});
 
 function validaNome(){
-  nome.on("change", function(){
   let valor = nome.val();
-  var verifyInt = /\d+/g;
-  var teste = valor.split(/\S+/).length - 1;
+  let verifyInt = /\d+/g;
+  let teste = valor.split(/\S+/).length - 1;
 
   if(teste >= 2 && $(nome).val().match(verifyInt) == null){
     nome.removeClass("borda-vermelha");
@@ -20,16 +30,19 @@ function validaNome(){
     nome.addClass("borda-vermelha");
     return false;
   }
-
-});
 }
-validaNome();
+
+function mostraErroNomeNoInput(){
+  nome.on("input", function(){
+    validaNome();
+  });
+}
+
 
 function validaEmail(){
-  email.on("change", function(){
   let valor = email.val();
 
-  var parse_email = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])/;
+  let parse_email = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])/;
 
 
   if(parse_email.exec(valor)){
@@ -43,41 +56,88 @@ function validaEmail(){
     email.addClass("borda-vermelha");
     return false;
   }
-
-});
 }
-validaEmail();
+
+function mostraErroEmailNoInput(){
+  email.on("input", function(){
+    validaEmail();
+  });
+}
+
+function mostraErroNoPersonalizar(){
+  $("#personalizar").on("input", ()=>{
+    validaPersonalizar();
+  });
+}
+
+function validaPersonalizar(){
+  if($("#personalizar").val().length != 0){
+    $("#personalizar").removeClass("borda-vermelha");
+    $("#personalizar").addClass("borda-verde");
+    return true;
+  }
+  else{
+    $("#personalizar").removeClass("borda-verde");
+    $("#personalizar").addClass("borda-vermelha");
+    return false;
+  }
+}
 
 function mostraPersonalizar(){
-  var disponibilidade = $(".disponibilidade");
-  disponibilidade.on("click", function() {
-    if($(this).val() == "personalizar"){
+  let personalizar = $("input[name=disponibilidade]:radio");
+
+  personalizar.on("change", function() {
+    if($("#disponibilidade-personalizar").is(":checked")){
       $("#personalizar").attr("hidden", false);
+      return true;
+
     }else{
       $("#personalizar").attr("hidden", true);
+      return false;
     }
   });
 }
-mostraPersonalizar();
+
+function mostraErroOutros(){
+  $("#interesseOutro").on("input", ()=>{
+    validaOutros();
+  });
+}
+
+function validaOutros(){
+  if($("#interesseOutro").val().length != 0){
+    $("#interesseOutro").removeClass("borda-vermelha");
+    $("#interesseOutro").addClass("borda-verde");
+    return true;
+  }
+  else{
+    $("#interesseOutro").removeClass("borda-verde");
+    $("#interesseOutro").addClass("borda-vermelha");
+    return false;
+  }
+}
 
 function mostraOutros(){
   var outro = $("#interesse4");
   outro.on("click", function(){
     if(outro.is(":checked")) {
       $("#interesseOutro").attr("hidden", false);
+
     } else {
       $("#interesseOutro").attr("hidden", true);
     }
   });
-
 }
-mostraOutros();
+
+function mostraErroNoInputMenssagem(){
+  mensagem.on("input", function(){
+    validaMensagem();
+  });
+}
 
 function validaMensagem(){
-  mensagem.on("change", function(){
   var valor = mensagem.val();
-  var teste = valor.length - 1;
-
+  var teste = valor.length;
 
   if(teste >= 140){
     mensagem.removeClass("borda-vermelha");
@@ -85,15 +145,64 @@ function validaMensagem(){
 
     return true;
 
-  }else{
+  }
+  else{
     mensagem.removeClass("borda-verde");
     mensagem.addClass("borda-vermelha");
+
     return false;
   }
-
-});
 }
-validaMensagem();
+
+function validaInteresses(){
+  let interesses = $('input[type=checkbox]');
+  interesses.each( (interesse)=>{
+    if(interesse.checked){
+      return true;
+    }
+  });
+
+  alert("Ao menos um interesse deve ser selecionada.");
+  return false;
+}
+
+function validaDisponibilidade(){
+  let disponibilidades = $('input[name=disponibilidade]:radio');
+  disponibilidades.each( (disponibilidade)=>{
+    if(disponibilidade.checked){
+      return true;
+    }
+  });
+  alert("Ao menos uma disponibilidade deve ser selecionada.");
+  return false;
+}
+
+function botaoSubmit(){
+
+  let botao = $("#botao-submit");
+  botao.on("mouseover", ()=>{
+    let nomeEhValido = validaNome();
+    let emailEhValido = validaEmail();
+    let mensagemEhValida = validaMensagem();
+    let personalizarEhValido = validaPersonalizar() || !($("#disponibilidade-personalizar").is(":checked"));
+    let outrosEhValido = validaOutros() || !($("#interesse4").is(":checked"));
+    let disponibilidadesSaoValidas = validaDisponibilidade();
+    let interessesSaoValidos = validaInteresses();
+
+    let funciona = 
+    nomeEhValido && 
+    emailEhValido && 
+    mensagemEhValida  && 
+    personalizarEhValido && 
+    outrosEhValido && 
+    disponibilidadesSaoValidas && 
+    interessesSaoValidos;
+
+    botao.prop("disabled", !funciona);
+  });
+
+}
+
 
 function sucesso(email){
   let formulario = $("form");
@@ -104,3 +213,5 @@ function sucesso(email){
   let text = email.val();
   p.innerHTML = "Inscrição enviada. Aguarde novos detalhes em seu e-mail "+ text;
 }
+
+

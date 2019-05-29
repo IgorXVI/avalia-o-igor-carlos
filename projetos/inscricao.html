@@ -1,76 +1,101 @@
 <!DOCTYPE HTML>
 <html lang=”pt-br”>
 <head>
-<meta charset=”UTF-8”>
-<title>Compasso Labs</title>
-<link rel="shortcut icon" href="img/favicon.jpg">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/site.css">
-<link rel="stylesheet" href="css/inscricao.css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Open+Sans+Condensed:300|Shadows+Into+Light" rel="stylesheet">
+  <meta charset=”UTF-8”>
+  <title>Compasso Labs</title>
+  <link rel="shortcut icon" href="img/favicon.jpg">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/inscricao.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Open+Sans+Condensed:300|Shadows+Into+Light" rel="stylesheet">
 </head>
 <body>
-<header class="cabecalho">
-  <h1>INSCREVA-SE</h1>
-</header>
-<main>
-  <section class="formulario">
-    <div class="container">
+  <header class="cabecalho">
+    <h1>INSCREVA-SE</h1>
+  </header>
+  <main>
+    <section class="formulario">
+      <div class="container">
 
        <form class="" onsubmit="formulario.geraInscricao(event)" action="" method="post">
          <legend>
            Faça parte desse time se inscrevendo na próxima edição do programa de
-            bolsas
-          </legend>
+           bolsas
+         </legend>
          <fieldset>
            <label for="">Nome Completo</label>
-             <input id="nome" type="text" name="nome" required autofocus>
-            <br>
+           <input id="nome" type="text" name="nome" required autofocus placeholder="Digite seu nome completo">
+           <br>
            <label for="">E-mail</label>
-            <input id="email" type="email" name="email" required placeholder="seu@email.com">
-            <br>
-        </fieldset>
-         <fieldset>
-           <label><strong>Maior disponibilidade </strong></label><br>
-             <input type="radio" class="disponibilidade" name="disponibilidade"  value="manha">Manhã
-             <input type="radio" class="disponibilidade" name="disponibilidade" value="tarde">Tarde
-             <input type="radio" class="disponibilidade" name="disponibilidade" value="noite">Noite
-             <input type="radio" class="disponibilidade" name="disponibilidade" value="personalizar">personalizar
-             <input type="text" id="personalizar" name="disponibilidade" hidden>
-        </fieldset>
-         <fieldset>
-           <label><strong>Interesses </strong></label><br>
-             <input type="checkbox" id="interesse1"  class="interesses" value="ia">Idea
-             <input type="checkbox" id="interesse2"  class="interesses" value="big data"> Big Data
-             <input type="checkbox" id="interesse3"  class="interesses" value="machine leatning"> Machine Learning
-             <input type="checkbox" id="interesse4" class="interesses" value="outro"> Outro
-             <input type="text" id="interesseOutro" name="interesseOutro" hidden>
-
+           <input id="email" type="email" name="email" required placeholder="seu@email.com">
+           <br>
          </fieldset>
          <fieldset>
-           <label><strong>Por que você quer particapar? </strong></label><br>
-             <textarea id="mensagem" name="porque" rows="8" cols="80" placeholder="Digite aqui sua mensagem"></textarea>
-        </fieldset>
-        <button class="botao" type="submit" name="button">ENVIAR MENSAGEM</button>
-       </form>
-       </div>
-       <div id="formulariodps" class="formularioGugu">
-          <p id="campo1"></p>
-          <a href="inscricao.html" class="link"> fazer outra inscrição </a>
-      </div>
+           <label><strong>Maior disponibilidade </strong></label><br>
+           <label>
+            <input type="radio" class="disponibilidade1" name="disponibilidade"  value="manha">Manhã
+          </label>
 
-     </div>
-  </section>
+          <label>
+            <input type="radio" class="disponibilidade2" name="disponibilidade" value="tarde">Tarde  
+          </label>
+
+          <label>
+            <input type="radio" class="disponibilidade3" name="disponibilidade" value="noite">Noite  
+          </label>
+
+          <label>
+            <input id="disponibilidade-personalizar" type="radio" class="disponibilidade" name="disponibilidade" value="personalizar">Personalizar
+          </label>
+          
+          
+          <input type="text" id="personalizar" name="disponibilidade" hidden>
+        </fieldset>
+        <fieldset>
+         <label><strong>Interesses </strong></label><br>
+
+         <label>
+          <input type="checkbox" id="interesse1"  class="interesses" value="ia">Idea  
+         </label>
+         
+         <label>
+          <input type="checkbox" id="interesse2"  class="interesses" value="big data"> Big Data  
+         </label>
+         
+         <label>
+          <input type="checkbox" id="interesse3"  class="interesses" value="machine leatning"> Machine Learning  
+         </label>
+         
+         <label>
+          <input type="checkbox" id="interesse4" class="interesses" value="outro"> Outro  
+         </label>
+         
+         <input type="text" id="interesseOutro" name="interesseOutro" hidden>
+       </fieldset>
+       <fieldset>
+         <label><strong>Por que você quer particapar? </strong></label><br>
+         <textarea id="mensagem" name="porque" rows="8" cols="80" placeholder="Digite aqui sua mensagem"></textarea>
+       </fieldset>
+       <button id="botao-submit" class="botao" type="submit" name="button">ENVIAR MENSAGEM</button>
+     </form>
+   </div>
+   <div id="formulariodps" class="formularioGugu">
+    <p id="campo1"></p>
+    <a href="inscricao.html" class="link"> fazer outra inscrição </a>
+  </div>
+
+</div>
+</section>
 </main>
 <footer class="rodape">
-    <h2>Compasso Tecnologia LTDA</h2>
-    <ul>
-      <li>
-        <a href="#">Contato</a>
-      </li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
+  <h2>Compasso Tecnologia LTDA</h2>
+  <ul>
+    <li>
+      <a href="#">Contato</a>
+    </li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="#">Link</a></li>
+  </ul>
 </footer>
 <script src="js/lib/jquery-3.3.1.min.js"></script>
 <script src="js/valida.js"></script>
